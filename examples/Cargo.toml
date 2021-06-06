@@ -1,0 +1,10 @@
+[package]
+authors = ["Pooya Eimandar <pooya.eimandar@live.com>"]
+edition = "2018"
+name = "ash_test"
+version = "0.1.0"
+
+[dependencies]
+ash = "0.32"
+ash-window = "0.6"
+winit = "0.25"
