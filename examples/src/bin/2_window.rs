@@ -5,13 +5,17 @@ use winit::{
 };
 
 fn main() {
+    // create event loop
     let event_loop = EventLoop::new();
+
+    // create window
     let window = WindowBuilder::new()
-        .with_title("Vulkan Rust")
+        .with_title("Vulkan Rust: 2_window")
         .build(&event_loop)
         .unwrap();
 
-    event_loop.run(move |event, _, control_flow| {
+    // run event loop which handles window's events
+    event_loop.run(move |event, _eloop_win_target, control_flow| {
         *control_flow = ControlFlow::Wait;
 
         match event {
